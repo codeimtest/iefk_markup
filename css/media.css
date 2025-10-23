@@ -121,13 +121,13 @@ header{
 /*fix buttons hover*/
 @media (hover: hover) {
 	footer a:hover{
-		color: #fff;
+		color: #fff !important;
 		opacity: 0.8;
 		transition: 0.2s ease all;
 	}
 	.btn:hover{
 		opacity: 0.8;
-		color: #fff;
+		color: #fff !important;
 	}
 	header a:hover{
 		opacity: 0.8;
@@ -136,13 +136,13 @@ header{
 
 @media (hover: none){
 	footer a:active{
-		color: #fff;
+		color: #fff !important;
 		opacity: 0.8;
 		transition: 0.2s ease all;
 	}
 	.btn:active{
 		opacity: 0.8;
-		color: #fff;
+		color: #fff !important;
 	}
 	header a:active{
 		opacity: 0.8;
