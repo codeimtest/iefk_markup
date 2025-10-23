@@ -1,0 +1,288 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #0A58F4;
+	--light: #EFF2F7;
+	--green: #08735D;
+	--gray: #ADADAD;
+	--text: #000;
+	--regular-text: 28px;
+	--lineheight: 1.4;
+	--userfont: Apercu, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+	--sm: 16px;
+	--md: 28px;
+	--lg: 38px;
+	--xl: 42px;
+	--xxl: 64px;
+	--index: calc(1vw + 1vh);
+	--transition: 0.2s ease all;
+	--radius: 40px;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Apercu_regular.woff2") format("woff2"); font-family: "Apercu"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Apercu_bold.woff2") format("woff2"); font-family: "Apercu"; font-weight: 700; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: var(--light); }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { border-radius: 0.5136696501220505vw;outline: none; width: 100%;border: 1px solid var(--text);resize: none;padding: 1.0205044751830756vw 1.5205044751830756vw;}
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: rgb(236, 105, 105); }
+input:required:valid, textarea:required:valid {  }
+button{
+	outline: none;
+	border: none;
+}
+body {
+	font-family: var(--userfont);
+	font-size: calc(var(--index) * 1.4);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+.sm{
+	font-size: calc(var(--index) * 1.4);
+}
+.md{
+	font-size: calc(var(--index) * 1.6);
+}
+.lg{
+	font-size: calc(var(--index) * 1.8);
+}
+.xl{
+	font-size: calc(var(--index) * 2);
+}
+.xxl{
+	font-size: calc(var(--index) * 2.8);
+}
+.mb_lg{
+	margin-bottom: 6.832384052074858vw;
+}
+h1,.one,h2,.two,h3,.three,h4,.four,h5,.five{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h1,.one{
+	font-size: calc(var(--index) * 3.3);
+}
+h2,.two{
+	font-size: calc(var(--index) * 2.2);
+}
+h3,.three{
+	font-size: calc(var(--index) * 1.8);
+}
+h4,.four{
+	font-size: 28px;
+}
+h5,.five{
+	font-size: 22px;
+}
+.white_text{
+	color: #fff;
+}
+.accent_text{
+	color: var(--accent);
+}
+.balance{
+	text-wrap: balance;
+}
+/* Stretch page to top | to bottom */
+html, body {
+	height: 100%;
+}
+.app {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1 1 auto;
+}
+a{
+	color: var(--accent);
+}
+.h-100{
+	height: 100%;
+}
+/* USER STYLES */
+.btn{
+	display: inline-block;
+	background: var(--accent);
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 1vw 2vw;
+	border-radius: 1000px;
+	transition: var(--transition);
+}
+section{ 
+	padding: 5.833333296vw 0;
+	overflow: hidden;
+}
+.light{
+	background: var(--light);
+}
+.accent{
+	background: var(--accent);
+}
+.green{
+	background: var(--green);
+}
+a.logo{
+	text-decoration: none;
+}
+a.logo > div{
+	text-decoration: none;
+	color: var(--text);
+}
+
+header{
+	background: #fff;
+	padding: 1.5859820700896496vw 0;
+	box-shadow: 0 4px 4px 0 rgba(206, 191, 191, 0.25);
+}
+header .btn{
+	margin-left: 4.149959250203748vw;
+}
+header a{
+	transition: var(--transition);
+}
+.radius_widget{
+	border-radius: 3.254678600488202vw;
+	position: relative;
+	padding: 2.726976365118174vw 2.641972290138549vw;
+}
+.radius_widget .mb{
+	margin-bottom: 5.29943vw;
+}
+.mx-320{
+	max-height: 52%;
+	z-index: 1;
+}
+.bg_col{
+	z-index: 1;
+}
+.bg_col::after{
+	content: '';
+	position: absolute;
+	background: url('../images/building.png') no-repeat left top;
+	width: 100%;
+	height: 100%;
+	background-size: contain !important;
+	top:-31%;
+	left: 0;
+	z-index: -2;
+}
+
+.image_widget::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -78%;
+	width: 100%;
+	height: 100%;
+	background-size: contain !important;
+	background: url('../images/truck.png') no-repeat center top;
+	z-index: 2;
+}
+.image_widget::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: contain !important;
+	background: url('../images/light.png') no-repeat center top;
+	z-index: 1;
+}
+.image_widget .lg{
+	z-index: 1;
+}
+.text_widget{
+	font-size: calc(var(--index) * 1.9);
+}
+.text_widget b{
+	font-size: calc(var(--index) * 2);
+}
+.text_widget li{
+	margin-bottom: 3vw;
+}
+.text_widget li:last-of-type{
+	margin-bottom: 0;
+}
+form label{
+	width: 100%;
+}
+form button{
+	min-width: 18.774614vw;
+}
+footer{
+	padding: 4.556550040683483vw 0;
+}
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 12px;
+  user-select: none;
+  font-family: sans-serif;
+	font-size: calc(var(--index) * 1.2);
+}
+
+/* Скрываем стандартный чекбокс */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+	padding: 0;
+	width: 0;
+}
+
+/* Внешний вид чекбокса */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gray);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Галочка при активном состоянии */
+.custom-checkbox input:checked + .checkmark {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Наведение */
+.custom-checkbox:hover .checkmark {
+  border-color: var(--accent);
+}
