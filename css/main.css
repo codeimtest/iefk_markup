@@ -257,8 +257,8 @@ footer a{
 
 /* Внешний вид чекбокса */
 .custom-checkbox .checkmark {
-  width: 20px;
-  height: 20px;
+  width: 2.1155410903173313vw;
+  height: 2.1155410903173313vw;
   border: 2px solid var(--gray);
   border-radius: 4px;
   transition: all 0.2s ease;
@@ -275,8 +275,8 @@ footer a{
 
 .custom-checkbox input:checked + .checkmark::after {
   content: "";
-  width: 6px;
-  height: 10px;
+  width: 0.4882017900732303vw;
+  height: 0.8136696501220505vw;
   border: solid #FFF;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);

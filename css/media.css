@@ -50,6 +50,10 @@ header{
 	top: 0;
     z-index: 2;
 }
+.custom-checkbox .checkmark {
+	width: 4.115541vw;
+	height: 4.115541vw;
+}
 }
 
 /* sm <= Medium (md) */
